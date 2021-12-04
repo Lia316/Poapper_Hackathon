@@ -14,3 +14,5 @@ var port = process.env.PORT || 80
 app.listen(port, () => {
     console.log(`server is running on ${port} port.`)
 })
+
+// 깃 연습 중
