@@ -10,6 +10,7 @@ app.get('', (req, res) => {
     res.send("Hello Express!")
 })
 
-app.listen(8080, () => {
-    console.log("server is running on 8080 port.")
+var port = process.env.PORT || 80
+app.listen(port, () => {
+    console.log(`server is running on ${port} port.`)
 })
