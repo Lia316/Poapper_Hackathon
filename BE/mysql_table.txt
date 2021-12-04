@@ -1,0 +1,12 @@
+CREATE DATABASE 2021_hackaton;
+USE 2021_hackaton;
+
+CREATE TABLE complaints(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    title VARCHAR(100) NOT NULL,
+    body TEXT NULL,
+    created DATETIME NOT NULL,
+    fromRoom INT(11) NULL,
+    toRoom INT(11) NOT NULL,
+    PRIMARY KEY(id)
+);
