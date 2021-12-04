@@ -1,14 +1,16 @@
 const express = require('express')
 const mysql = require('mysql')
+const router = express.Router()
+
+require('dotenv').config()
 
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: process.env.HOST,
     user: 'root',
-    password: 'password',
-    database: '2021_hackaton'
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 })
 
-const router = express.Router()
 
 router.get('/favicon.ico', (req, res) => { })
 

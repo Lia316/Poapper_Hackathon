@@ -1,5 +1,6 @@
+require('dotenv').config()
 const express = require('express')
-const complaintRouter = require('~/Poapper_Hackathon/BE/complaint.js')
+const complaintRouter = require(process.env.COMPLAINT_ADDRESS)
 
 const app = express()
 app.use(express.json())
