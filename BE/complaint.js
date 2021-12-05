@@ -11,6 +11,7 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 })
 
+db.connect()
 
 router.get('/favicon.ico', (req, res) => { })
 
