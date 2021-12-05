@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './main.css'
+import axios from 'axios';
+import './main.css';
 import Claim from './Claim';
 import ClaiminfoList from './ClaiminfoList';
 
@@ -7,7 +8,8 @@ class Main extends Component {
 
 
     state = {
-        mode : 0
+        mode : 0,
+        claimlist : []
     }
     goclaim = (e) =>{
         e.preventDefault();
@@ -18,6 +20,12 @@ class Main extends Component {
     }
     seeclaim = (e) =>{
         e.preventDefault();
+        axios.get('url')
+        .then((Response)=>{
+            this.setState({
+                claimlist : Response
+            })
+        }) 
         const {mode} = this.state;
         this.setState({
             mode : 1
@@ -25,8 +33,6 @@ class Main extends Component {
     }
     
     render() {
-        const claimlist = anxios(){}
-
         return (
             <div className = "Main">
             <div>

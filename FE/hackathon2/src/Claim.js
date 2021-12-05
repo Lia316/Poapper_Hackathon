@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Claim extends Component {
     state = {
@@ -29,11 +30,19 @@ class Claim extends Component {
                 description : ''
             })
         }
-        else{this.setState({
-            roomnumber : '',
-            description : '',
-            submitted: 1
-        })}
+        else{
+            axios.post('url', {
+                roomnumber: this.state.roomnumber,
+                description : this.state.description
+            })
+            .then((response)=>{
+                this.setState({
+                    roomnumber : '',
+                    description : '',
+                    submitted: 1
+                })
+            })
+            }
     }
     dsptchange = (e) => {
         this.setState({
