@@ -11,7 +11,7 @@ app.get('', (req, res) => {
     res.send("Hello Express!")
 })
 
-var port = process.env.PORT || 80
+var port = process.env.PORT || 3306
 app.listen(port, () => {
     console.log(`server is running on ${port} port.`)
 })
