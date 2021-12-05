@@ -1,7 +1,7 @@
 const path = require('path')
 require('dotenv').config()
 const express = require('express')
-const complaintRouter = require(path.resolve('/BE/complaint.js'))
+const complaintRouter = require(path.resolve('/app/BE/complaint.js'))
 
 const app = express()
 app.use(express.json())
