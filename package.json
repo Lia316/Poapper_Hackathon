@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Lia316/Poapper_Hackathon.git"
   },
   "engines": {
-    "node":"16.13.0",
+    "node": "16.13.0",
     "npm": "8.1.0"
   },
   "author": "",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Lia316/Poapper_Hackathon/issues"
   },
-  "homepage": "https://github.com/Lia316/Poapper_Hackathon#readme"
+  "homepage": "https://github.com/Lia316/Poapper_Hackathon#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
