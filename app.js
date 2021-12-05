@@ -1,5 +1,4 @@
-const path = require('path')
-require('dotenv').config({ path: path.resolve('/Users/gimjigyeong/Desktop/Developer/Poapper_Hackathon/.env')})
+require('dotenv').config()
 const express = require('express')
 const complaintRouter = require(process.env.COMPLAINT_ADDRESS)
 
