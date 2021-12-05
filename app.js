@@ -1,6 +1,6 @@
 require('dotenv').config() 
 const express = require('express')
-const complaintRouter = require('/BE/complaint.js')
+const complaintRouter = require('./BE/complaint.js')
 
 const app = express()
 app.use(express.json())
