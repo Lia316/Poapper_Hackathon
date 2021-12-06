@@ -146,6 +146,14 @@ router.get('', (req, res) => {
 - 뒤늦게 mock api 라는 존재를 깨닫고 구축했다
 
 
+##### DB
+
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/73650994/144818332-88f07f2a-4482-4ce8-9c4f-9d7765f40c5a.png">
+
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/73650994/144818500-48409aac-c2c8-491a-a208-f35ba13b8e7a.png">
+
+- Heroku 서버와 연결된 cleardb 로, 데이터베이스 자체느 정사 작동한다
+
 
 
 
