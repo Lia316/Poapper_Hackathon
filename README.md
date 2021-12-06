@@ -14,7 +14,7 @@
 `const list = frommelist.map(info => (<Claiminfo  key = {info.id}  info = {info}/>)
 );`
 
-.map을 사용해 컴포넌트를 리스트로 만들어 출력하면 된다.
+      .map을 사용해 컴포넌트를 리스트로 만들어 출력하면 된다.
 
 2.  react의 전반적인 사용법
        * 컴포넌트
