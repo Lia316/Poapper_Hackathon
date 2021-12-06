@@ -152,7 +152,7 @@ router.get('', (req, res) => {
 
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/73650994/144818500-48409aac-c2c8-491a-a208-f35ba13b8e7a.png">
 
-- Heroku 서버와 연결된 cleardb 로, 데이터베이스 자체느 정사 작동한다
+- Heroku 서버와 연결된 cleardb (정상 작동)
 
 
 
